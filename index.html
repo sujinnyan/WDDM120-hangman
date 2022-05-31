@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body id ="colorCont"> 
+    <div class="wrapper">
+        <h1><span class="gamename">Hangman Game</span></h1>
+        <h2>Choose the alphabet to guess the word👇</h2>
+    </div>
+    
+    <section id="remove">
+      
+    <svg viewBox="0 0 500 500">
+     
+     <circle id="smileface" cx="250" cy="210.1" r="185.1"/>
+    
+     <circle id="lefteye" cx="188.3" cy="182.7" r="27.4"/>
+     
+     <circle id="righteye" cx="311.7" cy="182.7" r="27.4"/>
+
+     <path id="mouth" d="M152.4,258.1c0,0,86.8,141.7,197.7,0"/>
+
+     <path id="leftribon" d="M250,398.7L57.3,329.3C44,324.5,30,334.4,30,348.5v111.2c0,14.6,14.8,24.5,28.3,18.8L250,398.7z"/>
+
+     <path id="rightribon" d="M250,398.7l192.7-69.3c13.3-4.8,27.3,5.1,27.3,19.2v111.2c0,14.6-14.8,24.5-28.3,18.8L250,398.7z"/>
+
+
+     <path id="middleribon" d="M280.5,434.2h-61.1c-11.9,0-21.5-9.6-21.5-21.5v-28.4c0-11.9,9.6-21.5,21.5-21.5h61.1
+     c11.9,0,21.5,9.6,21.5,21.5v28.4C302,424.6,292.4,434.2,280.5,434.2z"/>
+
+
+    </svg>
+    
+    <div id="text">
+      <div id="letters"></div>
+         
+      <div id="wrapper">
+       <span id="guess">
+         <label for="guessinput"></label>
+         
+         <button type="button" class="btn" onClick="history.go(0)">New Game</button>
+
+         <input id="guessinput" type="text" placeholder="  GUESS HERE" />  
+          <button id="submit">Submit</button>
+
+        </span>
+     </div>
+          
+        
+      <button id="changecolor" onclick="colorChange()">Theme Change</button>
+
+    </div>
+   
+
+    <script src="/js/hangman.js"></script>
+</body>
+</html>
