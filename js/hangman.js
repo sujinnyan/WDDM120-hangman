@@ -75,7 +75,7 @@ if (remainingLetters > 0) {
           parts.shift();
         }
         else {
-          alert("You lost🥲 Please try again! Push the new game button");
+          alert("You lost🥲 Please try again! Push the new game button👇");
           
         }
         
@@ -83,7 +83,7 @@ if (remainingLetters > 0) {
       
     if (remainingLetters === 0) {
         letters.innerHTML = answerArray.join(" ");
-        alert("Awesome!! You did good job😁 Push the new game button");
+        alert("Awesome!! You did good job😁 Push the new game button👇");
     }
 
 
